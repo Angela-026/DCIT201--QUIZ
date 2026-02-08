@@ -1,7 +1,6 @@
 public class GradeReport {
     public static void executeGradeReport(double score) {
 
-        //check if score is valid
         if (!validateScore(score)) {
             System.out.println("Invalid Score");
             return;
@@ -26,7 +25,7 @@ public class GradeReport {
         System.out.println("Your grade is " + grade);
     }
 
-    public static void main(String[] args) {
-        executeGradeReport(85);
+    static void main(String[] args) {
+        executeGradeReport(65);
     }
 }
